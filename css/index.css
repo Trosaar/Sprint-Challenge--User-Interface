@@ -128,6 +128,46 @@ header img {
     justify-content: center;
 }
 
+#one {
+	background-color: teal;
+}
+
+#two {
+	background-color: gold;
+}
+
+#three {
+	background-color: cadetblue;
+}
+
+#four {
+	background-color: coral;
+}
+
+#five {
+	background-color: crimson;
+}
+
+#six {
+	background-color: forestgreen;
+}
+
+#seven {
+	background-color: darkorchid;
+}
+
+#eight {
+	background-color: hotpink;
+}
+
+#nine {
+	background-color: indigo;
+}
+
+#ten {
+	background-color: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -159,4 +199,36 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.about-top-content, .about-bottom-content {
+	padding: 0 20px 20px;
+}
+
+.about-middle-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.content-box {
+	width: 370px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+}
+
+section.about-middle-content div h2 {
+	padding: 0;
+	line-height: 2;
+}
+
+section.about-middle-content div button {
+	margin: 20px 0 0;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 10px 20px;
+	font-size: 16px;
 }
