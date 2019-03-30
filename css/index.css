@@ -68,24 +68,40 @@ p {
 
 .container {
     width: 800px;
-		height: 100%;
     margin: 0 auto;
 }
 
-nav {
+header nav {
 	margin: 20px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
+header nav div.header-links {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
 header nav a {
 	text-decoration: none;
 	color: black;
+	transition: transform 1s ease-in-out;
+}
+
+header nav a:hover {
+	transform: scale(1.05);
+	border: 2px solid black;
+	padding: 5px 10px;
+}
+
+header nav img {
+	width: 157px;
 }
 
 header img {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .top-content {
@@ -127,6 +143,14 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box {
+	transition: transform 2s ease;
+}
+
+.box:hover {
+	transform: scale(1.25);
 }
 
 #one {
@@ -218,6 +242,14 @@ footer nav a {
 	display: flex;
 	flex-direction: column;
 	align-items:flex-start;
+}
+
+section div.content-box img {
+	transition: transform 1s ease-in-out;
+}
+
+section div.content-box img:hover {
+	transform: scale(1.05);
 }
 
 section.about-middle-content div h2 {
