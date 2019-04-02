@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -71,6 +71,39 @@ p {
     margin: 0 auto;
 }
 
+header nav {
+	margin: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav div.header-links {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+header nav a {
+	text-decoration: none;
+	color: black;
+	transition: transform 1s ease-in-out;
+}
+
+header nav a:hover {
+	transform: scale(1.05);
+	border: 2px solid black;
+	padding: 5px 10px;
+}
+
+header nav img {
+	width: 157px;
+}
+
+header img {
+	margin-bottom: 20px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +115,7 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -110,6 +143,54 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box {
+	transition: transform 2s ease;
+}
+
+.box:hover {
+	transform: scale(1.25);
+}
+
+#one {
+	background-color: teal;
+}
+
+#two {
+	background-color: gold;
+}
+
+#three {
+	background-color: cadetblue;
+}
+
+#four {
+	background-color: coral;
+}
+
+#five {
+	background-color: crimson;
+}
+
+#six {
+	background-color: forestgreen;
+}
+
+#seven {
+	background-color: darkorchid;
+}
+
+#eight {
+	background-color: hotpink;
+}
+
+#nine {
+	background-color: indigo;
+}
+
+#ten {
+	background-color: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +224,44 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.about-top-content, .about-bottom-content {
+	padding: 0 20px 20px;
+}
+
+.about-middle-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.content-box {
+	width: 370px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+}
+
+section div.content-box img {
+	transition: transform 1s ease-in-out;
+}
+
+section div.content-box img:hover {
+	transform: scale(1.05);
+}
+
+section.about-middle-content div h2 {
+	padding: 0;
+	line-height: 2;
+}
+
+section.about-middle-content div button {
+	margin: 20px 0 0;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 10px 20px;
+	font-size: 16px;
 }
